@@ -1,11 +1,12 @@
-import React from 'react';
-import ReactDOM from 'react-dom/client';
-import { BrowserRouter, Routes, Route } from 'react-router-dom';
-import { Navigation } from './components/Navigation';
-import Index from './pages/Index';
-import About from './pages/About';
-import NotFound from './pages/NotFound';
-import './global.css';
+import React from "react";
+import ReactDOM from "react-dom/client";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { Navigation } from "./components/Navigation";
+import Index from "./pages/Index";
+import About from "./pages/About";
+import Contact from "./pages/Contact";
+import NotFound from "./pages/NotFound";
+import "./global.css";
 
 // Placeholder component for pages not yet built
 const PlaceholderPage: React.FC<{ title: string }> = ({ title }) => (
@@ -14,7 +15,8 @@ const PlaceholderPage: React.FC<{ title: string }> = ({ title }) => (
       <div className="text-center px-4">
         <h1 className="font-title text-f-80 text-dark mb-8">{title}</h1>
         <p className="font-copy text-lg text-dark/60 max-w-2xl mx-auto">
-          This page is coming soon. Continue prompting to fill in this page's content if you'd like it built out.
+          This page is coming soon. Continue prompting to fill in this page's
+          content if you'd like it built out.
         </p>
       </div>
     </div>
@@ -30,8 +32,11 @@ function App() {
         <Route path="/work" element={<PlaceholderPage title="Our Work" />} />
         <Route path="/news" element={<PlaceholderPage title="Latest News" />} />
         <Route path="/about" element={<About />} />
-        <Route path="/capabilities" element={<PlaceholderPage title="Our Capabilities" />} />
-        <Route path="/contact" element={<PlaceholderPage title="Contact Us" />} />
+        <Route
+          path="/capabilities"
+          element={<PlaceholderPage title="Our Capabilities" />}
+        />
+        <Route path="/contact" element={<Contact />} />
         <Route path="*" element={<NotFound />} />
       </Routes>
     </BrowserRouter>
@@ -41,11 +46,11 @@ function App() {
 export default App;
 
 // Mount the app
-const rootElement = document.getElementById('root');
+const rootElement = document.getElementById("root");
 if (rootElement) {
   ReactDOM.createRoot(rootElement).render(
     <React.StrictMode>
       <App />
-    </React.StrictMode>
+    </React.StrictMode>,
   );
 }
