@@ -144,15 +144,9 @@ export default function Dashboard() {
             </CardHeader>
             <CardContent>
               <div className="text-2xl font-bold text-cream">
-                {loading ? (
-                  <Skeleton className="h-8 w-16" />
-                ) : (
-                  albums.length
-                )}
+                {loading ? <Skeleton className="h-8 w-16" /> : albums.length}
               </div>
-              <p className="text-xs text-cream/60 mt-1">
-                Top charting albums
-              </p>
+              <p className="text-xs text-cream/60 mt-1">Top charting albums</p>
             </CardContent>
           </Card>
 
@@ -233,7 +227,11 @@ export default function Dashboard() {
                     />
                     <YAxis />
                     <ChartTooltip content={<ChartTooltipContent />} />
-                    <Bar dataKey="position" fill="#d93535" radius={[8, 8, 0, 0]} />
+                    <Bar
+                      dataKey="position"
+                      fill="#d93535"
+                      radius={[8, 8, 0, 0]}
+                    />
                   </BarChart>
                 </ChartContainer>
               )}
@@ -360,8 +358,7 @@ export default function Dashboard() {
                             setCurrentlyPlaying(null);
                           } else {
                             // Pause all other audio
-                            const allAudio =
-                              document.querySelectorAll("audio");
+                            const allAudio = document.querySelectorAll("audio");
                             allAudio.forEach((a) => a.pause());
                             // Play this one
                             const audio = document.getElementById(
@@ -412,7 +409,11 @@ export default function Dashboard() {
                     style={{
                       // Randomize heights for masonry effect
                       marginBottom:
-                        index % 3 === 0 ? "2rem" : index % 2 === 0 ? "1rem" : "0.5rem",
+                        index % 3 === 0
+                          ? "2rem"
+                          : index % 2 === 0
+                            ? "1rem"
+                            : "0.5rem",
                     }}
                   >
                     <div className="relative overflow-hidden rounded-lg border-2 border-cream shadow-lg transition-all duration-300 hover:shadow-2xl hover:scale-105">
