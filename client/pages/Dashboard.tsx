@@ -321,7 +321,7 @@ export default function Dashboard() {
       </aside>
 
       {/* Main Content */}
-      <main className="flex-1 overflow-auto">
+      <main className="flex-1 overflow-auto bg-gradient-to-b from-transparent to-cream/50">
         {/* Header */}
         <header className="border-b-2 border-dark bg-gradient-to-r from-dark to-dark/95 sticky top-0 z-10 shadow-lg">
           <div className="flex items-center justify-between px-6 h-[49px]">
