@@ -323,10 +323,10 @@ export default function Dashboard() {
       {/* Main Content */}
       <main className="flex-1 overflow-auto">
         {/* Header */}
-        <header className="border-b border-border bg-background sticky top-0 z-10">
+        <header className="border-b-2 border-dark bg-gradient-to-r from-dark to-dark/95 sticky top-0 z-10 shadow-lg">
           <div className="flex items-center justify-between px-6 h-[49px]">
-            <h1 className="text-base font-semibold">Documents</h1>
-            <Button className="h-8 gap-1.5 bg-dark text-cream hover:bg-dark/90">
+            <h1 className="text-base font-semibold text-cream">Documents</h1>
+            <Button className="h-8 gap-1.5 bg-red text-cream hover:bg-red/90 border-2 border-cream/20">
               <CirclePlus className="w-4 h-4" />
               Quick Create
             </Button>
@@ -456,7 +456,7 @@ export default function Dashboard() {
           </div>
 
           {/* Chart Card */}
-          <Card className="border border-border shadow-sm">
+          <Card className="border-2 border-dark shadow-lg bg-gradient-to-br from-cream via-cream to-red/5">
             <CardHeader className="pb-6">
               <div className="flex items-start justify-between">
                 <div className="space-y-1.5">
