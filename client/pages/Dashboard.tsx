@@ -67,16 +67,12 @@ export default function Dashboard() {
   useEffect(() => {
     async function fetchMusicData() {
       try {
-        // Fetch top albums chart from Deezer
-        const albumsResponse = await fetch(
-          "https://api.deezer.com/chart/0/albums",
-        );
+        // Fetch top albums chart via our backend proxy
+        const albumsResponse = await fetch("/api/music/albums");
         const albumsData = await albumsResponse.json();
 
-        // Fetch top tracks for additional data
-        const tracksResponse = await fetch(
-          "https://api.deezer.com/chart/0/tracks",
-        );
+        // Fetch top tracks via our backend proxy
+        const tracksResponse = await fetch("/api/music/tracks");
         const tracksData = await tracksResponse.json();
 
         setAlbums(albumsData.data.slice(0, 20));
