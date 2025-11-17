@@ -39,6 +39,7 @@ function App() {
           element={<PlaceholderPage title="Our Capabilities" />}
         />
         <Route path="/dashboard" element={<Dashboard />} />
+        <Route path="/charts" element={<Charts />} />
         <Route path="/contact" element={<Contact />} />
         <Route path="*" element={<NotFound />} />
       </Routes>
