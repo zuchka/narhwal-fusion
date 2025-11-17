@@ -6,6 +6,7 @@ import Index from "./pages/Index";
 import About from "./pages/About";
 import Contact from "./pages/Contact";
 import Dashboard from "./pages/Dashboard";
+import Charts from "./pages/Charts";
 import NotFound from "./pages/NotFound";
 import "./global.css";
 
