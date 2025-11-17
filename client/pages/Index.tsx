@@ -125,7 +125,7 @@ export default function Index() {
       {/* Hero Section */}
       <section
         id="hero"
-        className="relative min-h-[481px] flex items-center justify-center overflow-hidden pt-[60px]"
+        className="relative min-h-[722px] flex items-center justify-center overflow-hidden pt-[60px] bg-gradient-to-br from-dark via-dark to-red/20"
       >
         {/* Background overlay */}
         <div className="absolute inset-0 bg-cream mix-difference z-10 pointer-events-none" />
@@ -139,13 +139,14 @@ export default function Index() {
               </span>
               <span className="block text-f-120 md:text-f-180 text-red font-bold animate-fadeIn animation-delay-200 relative">
                 NARwhal
-                <span className="absolute -inset-2 bg-red/10 blur-2xl -z-10"></span>
+                <span className="absolute -inset-8 bg-red/30 blur-3xl -z-10"></span>
               </span>
             </h1>
 
             {/* Decorative elements */}
-            <div className="absolute right-[5vw] top-1/2 -translate-y-1/2 w-[20vw] h-[20vw] bg-red rounded-full opacity-15 blur-3xl animate-pulse" />
-            <div className="absolute left-[5vw] top-1/3 w-[15vw] h-[15vw] bg-dark rounded-full opacity-5 blur-3xl" />
+            <div className="absolute right-[10%] top-1/2 -translate-y-1/2 w-[45vw] h-[45vw] bg-red rounded-full opacity-25 blur-3xl animate-pulse" />
+            <div className="absolute left-[10%] top-1/3 w-[40vw] h-[40vw] bg-red rounded-full opacity-20 blur-3xl animate-pulse" style={{ animationDelay: '1s' }} />
+            <div className="absolute top-[20%] left-1/2 -translate-x-1/2 w-[35vw] h-[35vw] bg-red rounded-full opacity-15 blur-3xl animate-pulse" style={{ animationDelay: '0.5s' }} />
           </div>
         </div>
 
