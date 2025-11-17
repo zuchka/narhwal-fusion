@@ -12,7 +12,6 @@ import {
   ChartTooltip,
   ChartTooltipContent,
 } from "@/components/ui/chart";
-import { Badge } from "@/components/ui/badge";
 import { Skeleton } from "@/components/ui/skeleton";
 import {
   BarChart,
@@ -26,20 +25,6 @@ import {
   Pie,
   Cell,
 } from "recharts";
-
-interface Album {
-  id: number;
-  title: string;
-  cover: string;
-  cover_medium: string;
-  cover_big: string;
-  artist: {
-    name: string;
-    picture_medium: string;
-  };
-  position: number;
-  fans?: number;
-}
 
 interface Track {
   id: number;
@@ -58,11 +43,11 @@ interface GenreData {
 const COLORS = ["#d93535", "#282d35", "#f0ecd9", "#a52a2a", "#8b0000"];
 
 export default function Dashboard() {
-  const [albums, setAlbums] = useState<Album[]>([]);
   const [tracks, setTracks] = useState<Track[]>([]);
   const [loading, setLoading] = useState(true);
   const [genreData, setGenreData] = useState<GenreData[]>([]);
   const [currentlyPlaying, setCurrentlyPlaying] = useState<string | null>(null);
+  const [totalAlbums] = useState(20); // Static count for display
 
   useEffect(() => {
     async function fetchMusicData() {
