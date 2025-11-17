@@ -94,11 +94,6 @@ export default function Dashboard() {
     duration: Math.floor(track.duration / 60),
   }));
 
-  const albumPopularityData = albums.slice(0, 8).map((album) => ({
-    name: album.artist.name.slice(0, 15),
-    position: 25 - album.position, // Invert for better visualization
-  }));
-
   return (
     <div className="min-h-screen bg-cream pt-[80px] pb-20">
       <div className="px-[0.7vw]">
