@@ -14,7 +14,7 @@ import {
   TrendingUp,
   TrendingDown,
   CirclePlus,
-  LayoutColumns,
+  Columns,
   Plus,
   ChevronDown,
   GripVertical,
