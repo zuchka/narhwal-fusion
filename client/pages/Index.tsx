@@ -169,14 +169,7 @@ export default function Index() {
         </div>
 
         {/* Scroll indicator */}
-        <div className="absolute bottom-8 left-1/2 -translate-x-1/2 text-dark animate-bounce">
-          <div className="flex flex-col items-center gap-2">
-            <span className="font-copy text-xs uppercase tracking-wider">
-              Scroll
-            </span>
-            <div className="w-[1px] h-12 bg-dark" />
-          </div>
-        </div>
+        <div className="absolute bottom-8 left-1/2 -translate-x-1/2 text-dark animate-bounce" />
       </section>
 
       {/* Work Section */}
