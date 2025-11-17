@@ -333,10 +333,10 @@ export default function Dashboard() {
                     className="gap-1 h-[22px] px-2 py-0.5 border-dark/30 bg-cream"
                   >
                     <TrendingUp className="w-4 h-4 text-dark" />
-                    <span className="text-xs font-semibold text-dark">+12.5%</span>
+                    <span className="text-xs font-semibold text-dark">+18.2%</span>
                   </Badge>
                 </div>
-                <p className="text-2xl font-semibold text-dark">$1,250.00</p>
+                <p className="text-2xl font-semibold text-dark">$47,582.00</p>
               </CardContent>
               <CardContent className="px-6 pb-6 pt-0">
                 <div className="flex items-center gap-1 mb-1">
@@ -346,7 +346,7 @@ export default function Dashboard() {
                   <TrendingUp className="w-4 h-4 text-dark" />
                 </div>
                 <p className="text-sm text-dark/70">
-                  Visitors for the last 6 months
+                  Revenue increased from last quarter
                 </p>
               </CardContent>
             </Card>
@@ -361,20 +361,20 @@ export default function Dashboard() {
                     className="gap-1 h-[22px] px-2 py-0.5 border-dark/30 bg-cream"
                   >
                     <TrendingDown className="w-4 h-4 text-dark" />
-                    <span className="text-xs font-semibold text-dark">-20%</span>
+                    <span className="text-xs font-semibold text-dark">-8.3%</span>
                   </Badge>
                 </div>
-                <p className="text-2xl font-semibold text-dark">1,234</p>
+                <p className="text-2xl font-semibold text-dark">2,847</p>
               </CardContent>
               <CardContent className="px-6 pb-6 pt-0">
                 <div className="flex items-center gap-1 mb-1">
                   <p className="text-sm font-medium text-dark">
-                    Down 20% this period
+                    Slight decline this period
                   </p>
                   <TrendingDown className="w-4 h-4 text-dark" />
                 </div>
                 <p className="text-sm text-dark/70">
-                  Acquisition needs attention
+                  Seasonal variation detected
                 </p>
               </CardContent>
             </Card>
@@ -389,10 +389,10 @@ export default function Dashboard() {
                     className="gap-1 h-[22px] px-2 py-0.5 border-dark/30 bg-cream"
                   >
                     <TrendingUp className="w-4 h-4 text-dark" />
-                    <span className="text-xs font-semibold text-dark">+12.5%</span>
+                    <span className="text-xs font-semibold text-dark">+24.7%</span>
                   </Badge>
                 </div>
-                <p className="text-2xl font-semibold text-dark">45,678</p>
+                <p className="text-2xl font-semibold text-dark">12,483</p>
               </CardContent>
               <CardContent className="px-6 pb-6 pt-0">
                 <div className="flex items-center gap-1 mb-1">
@@ -402,7 +402,7 @@ export default function Dashboard() {
                   <TrendingUp className="w-4 h-4 text-dark" />
                 </div>
                 <p className="text-sm text-dark/70">
-                  Engagement exceed targets
+                  Engagement exceeds targets
                 </p>
               </CardContent>
             </Card>
@@ -417,19 +417,19 @@ export default function Dashboard() {
                     className="gap-1 h-[22px] px-2 py-0.5 border-dark/30 bg-cream"
                   >
                     <TrendingUp className="w-4 h-4 text-dark" />
-                    <span className="text-xs font-semibold text-dark">+4.5%</span>
+                    <span className="text-xs font-semibold text-dark">+32.8%</span>
                   </Badge>
                 </div>
-                <p className="text-2xl font-semibold text-dark">4.5%</p>
+                <p className="text-2xl font-semibold text-dark">89.2%</p>
               </CardContent>
               <CardContent className="px-6 pb-6 pt-0">
                 <div className="flex items-start gap-1 mb-1">
                   <p className="text-sm font-medium text-dark">
-                    Steady performance increase
+                    Exceptional performance
                   </p>
                   <TrendingUp className="w-4 h-4 flex-shrink-0 text-dark" />
                 </div>
-                <p className="text-sm text-dark/70">Meets growth projections</p>
+                <p className="text-sm text-dark/70">Exceeds growth projections</p>
               </CardContent>
             </Card>
           </div>
