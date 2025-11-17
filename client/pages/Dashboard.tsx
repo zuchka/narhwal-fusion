@@ -350,26 +350,26 @@ export default function Dashboard() {
 
           {/* Metric Cards */}
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
-            <Card className="border-2 border-dark shadow-lg bg-gradient-to-br from-red to-red/90">
+            <Card className="border-2 border-dark shadow-lg bg-cream">
               <CardContent className="p-6">
                 <div className="flex items-center justify-between mb-1.5">
-                  <p className="text-sm text-cream/90">Total Revenue</p>
+                  <p className="text-sm text-dark/70">Total Revenue</p>
                   <Badge
                     variant="outline"
-                    className="gap-1 h-[22px] px-2 py-0.5 border-cream/30 bg-cream/10 text-cream"
+                    className="gap-1 h-[22px] px-2 py-0.5 border-dark/20"
                   >
                     <TrendingUp className="w-4 h-4" />
                     <span className="text-xs font-semibold">+12.5%</span>
                   </Badge>
                 </div>
-                <p className="text-2xl font-semibold text-cream">$1,250.00</p>
+                <p className="text-2xl font-semibold text-dark">$1,250.00</p>
               </CardContent>
               <CardContent className="px-6 pb-6 pt-0">
                 <div className="flex items-center gap-1 mb-1">
-                  <p className="text-sm font-medium text-cream">Trending up this month</p>
-                  <TrendingUp className="w-4 h-4 text-cream" />
+                  <p className="text-sm font-medium text-dark">Trending up this month</p>
+                  <TrendingUp className="w-4 h-4 text-dark" />
                 </div>
-                <p className="text-sm text-cream/80">
+                <p className="text-sm text-dark/70">
                   Visitors for the last 6 months
                 </p>
               </CardContent>
@@ -400,40 +400,40 @@ export default function Dashboard() {
               </CardContent>
             </Card>
 
-            <Card className="border-2 border-dark shadow-lg bg-gradient-to-br from-dark to-dark/95">
+            <Card className="border-2 border-dark shadow-lg bg-cream">
               <CardContent className="p-6">
                 <div className="flex items-center justify-between mb-1.5">
-                  <p className="text-sm text-cream/90">
+                  <p className="text-sm text-dark/70">
                     Active Accounts
                   </p>
                   <Badge
                     variant="outline"
-                    className="gap-1 h-[22px] px-2 py-0.5 border-cream/30 bg-cream/10 text-cream"
+                    className="gap-1 h-[22px] px-2 py-0.5 border-dark/20"
                   >
                     <TrendingUp className="w-4 h-4" />
                     <span className="text-xs font-semibold">+12.5%</span>
                   </Badge>
                 </div>
-                <p className="text-2xl font-semibold text-cream">45,678</p>
+                <p className="text-2xl font-semibold text-dark">45,678</p>
               </CardContent>
               <CardContent className="px-6 pb-6 pt-0">
                 <div className="flex items-center gap-1 mb-1">
-                  <p className="text-sm font-medium text-cream">Strong user retention</p>
-                  <TrendingUp className="w-4 h-4 text-cream" />
+                  <p className="text-sm font-medium text-dark">Strong user retention</p>
+                  <TrendingUp className="w-4 h-4 text-dark" />
                 </div>
-                <p className="text-sm text-cream/80">
+                <p className="text-sm text-dark/70">
                   Engagement exceed targets
                 </p>
               </CardContent>
             </Card>
 
-            <Card className="border-2 border-red shadow-lg bg-gradient-to-br from-cream to-cream/95">
+            <Card className="border-2 border-dark shadow-lg bg-cream">
               <CardContent className="p-6">
                 <div className="flex items-center justify-between mb-1.5">
                   <p className="text-sm text-dark/70">Growth Rate</p>
                   <Badge
                     variant="outline"
-                    className="gap-1 h-[22px] px-2 py-0.5 border-red bg-red/10 text-red"
+                    className="gap-1 h-[22px] px-2 py-0.5 border-dark/20"
                   >
                     <TrendingUp className="w-4 h-4" />
                     <span className="text-xs font-semibold">+4.5%</span>
@@ -446,7 +446,7 @@ export default function Dashboard() {
                   <p className="text-sm font-medium text-dark">
                     Steady performance increase
                   </p>
-                  <TrendingUp className="w-4 h-4 flex-shrink-0 text-red" />
+                  <TrendingUp className="w-4 h-4 flex-shrink-0 text-dark" />
                 </div>
                 <p className="text-sm text-dark/70">
                   Meets growth projections
