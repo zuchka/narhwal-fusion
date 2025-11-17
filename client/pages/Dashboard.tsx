@@ -495,55 +495,60 @@ export default function Dashboard() {
                     y1="0"
                     x2="1000"
                     y2="0"
-                    stroke="hsl(var(--border))"
+                    stroke="#282d35"
                     strokeWidth="1"
+                    opacity="0.1"
                   />
                   <line
                     x1="0"
                     y1="52.5"
                     x2="1000"
                     y2="52.5"
-                    stroke="hsl(var(--border))"
+                    stroke="#282d35"
                     strokeWidth="1"
+                    opacity="0.1"
                   />
                   <line
                     x1="0"
                     y1="105"
                     x2="1000"
                     y2="105"
-                    stroke="hsl(var(--border))"
+                    stroke="#282d35"
                     strokeWidth="1"
+                    opacity="0.1"
                   />
                   <line
                     x1="0"
                     y1="157.5"
                     x2="1000"
                     y2="157.5"
-                    stroke="hsl(var(--border))"
+                    stroke="#282d35"
                     strokeWidth="1"
+                    opacity="0.1"
                   />
                   <line
                     x1="0"
                     y1="210"
                     x2="1000"
                     y2="210"
-                    stroke="hsl(var(--border))"
+                    stroke="#282d35"
                     strokeWidth="1"
+                    opacity="0.1"
                   />
 
-                  {/* Chart path - two lines */}
+                  {/* Chart path - two lines using brand colors */}
                   <path
                     d="M 0,110 L 71,135 L 143,80 L 214,90 L 286,45 L 357,55 L 429,25 L 500,35 L 571,10 L 643,20 L 714,5 L 786,15 L 857,0 L 929,10"
                     fill="none"
-                    stroke="hsl(var(--muted-foreground))"
-                    strokeWidth="2"
-                    opacity="0.5"
+                    stroke="#d93535"
+                    strokeWidth="2.5"
+                    opacity="0.6"
                   />
                   <path
                     d="M 0,120 L 71,145 L 143,90 L 214,100 L 286,55 L 357,65 L 429,35 L 500,45 L 571,20 L 643,30 L 714,15 L 786,25 L 857,10 L 929,20"
                     fill="none"
-                    stroke="hsl(var(--foreground))"
-                    strokeWidth="2"
+                    stroke="#282d35"
+                    strokeWidth="2.5"
                   />
                 </svg>
               </div>
