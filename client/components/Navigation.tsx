@@ -18,11 +18,7 @@ export const Navigation: React.FC = () => {
 
   const navLinks = [
     { path: '/work', label: 'Work' },
-    { path: '/news', label: 'News' },
-    { path: '/about', label: 'About' },
-    { path: '/capabilities', label: 'Capabilities' },
     { path: '/dashboard', label: 'Dashboard' },
-    { path: '/charts', label: 'Charts' },
     { path: '/contact', label: 'Contact' },
   ];
 
