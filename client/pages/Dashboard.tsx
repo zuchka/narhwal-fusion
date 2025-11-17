@@ -13,7 +13,6 @@ import {
   Search,
   TrendingUp,
   TrendingDown,
-  CirclePlus,
   Columns,
   Plus,
   ChevronDown,
