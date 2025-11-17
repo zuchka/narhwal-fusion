@@ -316,11 +316,7 @@ export default function Dashboard() {
           {/* Top Section - View in Shadcn Link */}
           <div className="flex items-center justify-between">
             <div className="flex-1" />
-            <Button
-              variant="outline"
-              size="sm"
-              className="gap-1.5 h-8 text-xs"
-            >
+            <Button variant="outline" size="sm" className="gap-1.5 h-8 text-xs">
               <span className="underline">View in Shadcn</span>
               <SquareArrowOutUpRight className="w-4 h-4" />
             </Button>
@@ -344,7 +340,9 @@ export default function Dashboard() {
               </CardContent>
               <CardContent className="px-6 pb-6 pt-0">
                 <div className="flex items-center gap-1 mb-1">
-                  <p className="text-sm font-medium text-dark">Trending up this month</p>
+                  <p className="text-sm font-medium text-dark">
+                    Trending up this month
+                  </p>
                   <TrendingUp className="w-4 h-4 text-dark" />
                 </div>
                 <p className="text-sm text-dark/70">
@@ -369,7 +367,9 @@ export default function Dashboard() {
               </CardContent>
               <CardContent className="px-6 pb-6 pt-0">
                 <div className="flex items-center gap-1 mb-1">
-                  <p className="text-sm font-medium text-dark">Down 20% this period</p>
+                  <p className="text-sm font-medium text-dark">
+                    Down 20% this period
+                  </p>
                   <TrendingDown className="w-4 h-4 text-dark" />
                 </div>
                 <p className="text-sm text-dark/70">
@@ -381,9 +381,7 @@ export default function Dashboard() {
             <Card className="border-2 border-dark shadow-lg bg-cream">
               <CardContent className="p-6">
                 <div className="flex items-center justify-between mb-1.5">
-                  <p className="text-sm text-dark/70">
-                    Active Accounts
-                  </p>
+                  <p className="text-sm text-dark/70">Active Accounts</p>
                   <Badge
                     variant="outline"
                     className="gap-1 h-[22px] px-2 py-0.5 border-dark/20"
@@ -396,7 +394,9 @@ export default function Dashboard() {
               </CardContent>
               <CardContent className="px-6 pb-6 pt-0">
                 <div className="flex items-center gap-1 mb-1">
-                  <p className="text-sm font-medium text-dark">Strong user retention</p>
+                  <p className="text-sm font-medium text-dark">
+                    Strong user retention
+                  </p>
                   <TrendingUp className="w-4 h-4 text-dark" />
                 </div>
                 <p className="text-sm text-dark/70">
@@ -426,9 +426,7 @@ export default function Dashboard() {
                   </p>
                   <TrendingUp className="w-4 h-4 flex-shrink-0 text-dark" />
                 </div>
-                <p className="text-sm text-dark/70">
-                  Meets growth projections
-                </p>
+                <p className="text-sm text-dark/70">Meets growth projections</p>
               </CardContent>
             </Card>
           </div>
@@ -605,12 +603,24 @@ export default function Dashboard() {
                     <TableHead className="w-12 text-cream">
                       <Checkbox className="border-cream data-[state=checked]:bg-red data-[state=checked]:border-red" />
                     </TableHead>
-                    <TableHead className="font-semibold text-cream">Header</TableHead>
-                    <TableHead className="font-semibold text-cream">Section Type</TableHead>
-                    <TableHead className="font-semibold text-cream">Status</TableHead>
-                    <TableHead className="font-semibold text-cream">Target</TableHead>
-                    <TableHead className="font-semibold text-cream">Limit</TableHead>
-                    <TableHead className="font-semibold text-cream">Reviewer</TableHead>
+                    <TableHead className="font-semibold text-cream">
+                      Header
+                    </TableHead>
+                    <TableHead className="font-semibold text-cream">
+                      Section Type
+                    </TableHead>
+                    <TableHead className="font-semibold text-cream">
+                      Status
+                    </TableHead>
+                    <TableHead className="font-semibold text-cream">
+                      Target
+                    </TableHead>
+                    <TableHead className="font-semibold text-cream">
+                      Limit
+                    </TableHead>
+                    <TableHead className="font-semibold text-cream">
+                      Reviewer
+                    </TableHead>
                     <TableHead className="w-12 text-cream"></TableHead>
                   </TableRow>
                 </TableHeader>
@@ -639,12 +649,20 @@ export default function Dashboard() {
                       </TableCell>
                       <TableCell>
                         {doc.status === "done" ? (
-                          <Badge variant="outline" className="gap-1 border-green-600/40 bg-green-50">
+                          <Badge
+                            variant="outline"
+                            className="gap-1 border-green-600/40 bg-green-50"
+                          >
                             <CheckCircle2 className="w-3 h-3 fill-green-600 stroke-green-600" />
-                            <span className="text-green-700 font-medium">Done</span>
+                            <span className="text-green-700 font-medium">
+                              Done
+                            </span>
                           </Badge>
                         ) : (
-                          <Badge variant="outline" className="gap-1 border-red/40 bg-red/5">
+                          <Badge
+                            variant="outline"
+                            className="gap-1 border-red/40 bg-red/5"
+                          >
                             <Loader2 className="w-3 h-3 text-red" />
                             <span className="text-dark/70 font-medium">
                               In Process
@@ -652,19 +670,33 @@ export default function Dashboard() {
                           </Badge>
                         )}
                       </TableCell>
-                      <TableCell className="text-dark font-medium">{doc.target}</TableCell>
-                      <TableCell className="text-dark font-medium">{doc.limit}</TableCell>
+                      <TableCell className="text-dark font-medium">
+                        {doc.target}
+                      </TableCell>
+                      <TableCell className="text-dark font-medium">
+                        {doc.limit}
+                      </TableCell>
                       <TableCell>
                         {doc.reviewer ? (
-                          <span className="text-dark font-medium">{doc.reviewer}</span>
+                          <span className="text-dark font-medium">
+                            {doc.reviewer}
+                          </span>
                         ) : (
                           <Select>
                             <SelectTrigger className="h-9 w-[146px] border-dark/30 bg-cream hover:bg-dark/5 text-dark">
                               <SelectValue placeholder="Assign reviewer" />
                             </SelectTrigger>
                             <SelectContent className="bg-cream border-2 border-dark">
-                              <SelectItem value="eddie" className="text-dark hover:bg-dark/10">Eddie Lake</SelectItem>
-                              <SelectItem value="jamik" className="text-dark hover:bg-dark/10">
+                              <SelectItem
+                                value="eddie"
+                                className="text-dark hover:bg-dark/10"
+                              >
+                                Eddie Lake
+                              </SelectItem>
+                              <SelectItem
+                                value="jamik"
+                                className="text-dark hover:bg-dark/10"
+                              >
                                 Jamik Tashpulatov
                               </SelectItem>
                             </SelectContent>
@@ -672,7 +704,11 @@ export default function Dashboard() {
                         )}
                       </TableCell>
                       <TableCell>
-                        <Button variant="ghost" size="icon" className="h-8 w-8 hover:bg-dark/10 text-dark/70 hover:text-dark">
+                        <Button
+                          variant="ghost"
+                          size="icon"
+                          className="h-8 w-8 hover:bg-dark/10 text-dark/70 hover:text-dark"
+                        >
                           <MoreHorizontal className="w-4 h-4" />
                         </Button>
                       </TableCell>
@@ -688,19 +724,38 @@ export default function Dashboard() {
                 </p>
                 <div className="flex items-center gap-8">
                   <div className="flex items-center gap-2">
-                    <span className="text-sm font-semibold text-dark">Rows per page</span>
+                    <span className="text-sm font-semibold text-dark">
+                      Rows per page
+                    </span>
                     <Select defaultValue="10">
                       <SelectTrigger className="h-9 w-20 border-dark/30 bg-cream hover:bg-dark/5 text-dark font-medium">
                         <SelectValue />
                       </SelectTrigger>
                       <SelectContent className="bg-cream border-2 border-dark">
-                        <SelectItem value="10" className="text-dark hover:bg-dark/10">10</SelectItem>
-                        <SelectItem value="20" className="text-dark hover:bg-dark/10">20</SelectItem>
-                        <SelectItem value="50" className="text-dark hover:bg-dark/10">50</SelectItem>
+                        <SelectItem
+                          value="10"
+                          className="text-dark hover:bg-dark/10"
+                        >
+                          10
+                        </SelectItem>
+                        <SelectItem
+                          value="20"
+                          className="text-dark hover:bg-dark/10"
+                        >
+                          20
+                        </SelectItem>
+                        <SelectItem
+                          value="50"
+                          className="text-dark hover:bg-dark/10"
+                        >
+                          50
+                        </SelectItem>
                       </SelectContent>
                     </Select>
                   </div>
-                  <span className="text-sm font-semibold text-dark">Page 1 of 7</span>
+                  <span className="text-sm font-semibold text-dark">
+                    Page 1 of 7
+                  </span>
                   <div className="flex items-center gap-2">
                     <Button
                       variant="outline"
