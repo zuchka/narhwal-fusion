@@ -22,6 +22,7 @@ export const Navigation: React.FC = () => {
     { path: '/about', label: 'About' },
     { path: '/capabilities', label: 'Capabilities' },
     { path: '/dashboard', label: 'Dashboard' },
+    { path: '/charts', label: 'Charts' },
     { path: '/contact', label: 'Contact' },
   ];
 
