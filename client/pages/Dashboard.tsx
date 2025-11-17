@@ -14,13 +14,11 @@ import {
 } from "@/components/ui/chart";
 import { Skeleton } from "@/components/ui/skeleton";
 import {
-  BarChart,
-  Bar,
-  XAxis,
-  YAxis,
-  CartesianGrid,
   LineChart,
   Line,
+  CartesianGrid,
+  XAxis,
+  YAxis,
   PieChart,
   Pie,
   Cell,
