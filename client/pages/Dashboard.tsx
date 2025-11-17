@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import {
   LayoutDashboard,
   LayoutList,
@@ -53,22 +53,22 @@ import {
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 import { Separator } from "@/components/ui/separator";
 
-// Mock data for the chart
+// Mock data for the chart - realistic visitor trends
 const chartData = [
-  { date: "Apr 2", value: 420 },
-  { date: "Apr 8", value: 380 },
-  { date: "Apr 14", value: 520 },
-  { date: "Apr 21", value: 490 },
-  { date: "Apr 28", value: 580 },
-  { date: "May 5", value: 540 },
-  { date: "May 12", value: 620 },
-  { date: "May 19", value: 590 },
-  { date: "May 25", value: 680 },
-  { date: "Jun 2", value: 640 },
-  { date: "Jun 8", value: 720 },
-  { date: "Jun 15", value: 700 },
-  { date: "Jun 22", value: 760 },
-  { date: "Jun 30", value: 740 },
+  { date: "Apr 2", value: 8420 },
+  { date: "Apr 8", value: 9180 },
+  { date: "Apr 14", value: 8920 },
+  { date: "Apr 21", value: 10490 },
+  { date: "Apr 28", value: 11580 },
+  { date: "May 5", value: 10940 },
+  { date: "May 12", value: 12620 },
+  { date: "May 19", value: 13190 },
+  { date: "May 25", value: 12680 },
+  { date: "Jun 2", value: 14240 },
+  { date: "Jun 8", value: 15120 },
+  { date: "Jun 15", value: 14800 },
+  { date: "Jun 22", value: 16360 },
+  { date: "Jun 30", value: 15940 },
 ];
 
 // Mock data for documents table
@@ -168,6 +168,15 @@ const documents = [
 export default function Dashboard() {
   const [sidebarOpen, setSidebarOpen] = useState(true);
   const [selectedTimeRange, setSelectedTimeRange] = useState("3months");
+  const [chartAnimated, setChartAnimated] = useState(false);
+
+  // Trigger chart animation on mount
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      setChartAnimated(true);
+    }, 100);
+    return () => clearTimeout(timer);
+  }, []);
 
   return (
     <div className="flex min-h-screen bg-gradient-to-br from-cream via-cream to-red/10 font-montreal pt-[calc(60px+1.4vw)]">
