@@ -119,7 +119,7 @@ export default function Dashboard() {
             </CardHeader>
             <CardContent>
               <div className="text-2xl font-bold text-cream">
-                {loading ? <Skeleton className="h-8 w-16" /> : albums.length}
+                {loading ? <Skeleton className="h-8 w-16" /> : totalAlbums}
               </div>
               <p className="text-xs text-cream/60 mt-1">Top charting albums</p>
             </CardContent>
