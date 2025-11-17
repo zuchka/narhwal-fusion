@@ -5,6 +5,7 @@ import { Navigation } from "./components/Navigation";
 import Index from "./pages/Index";
 import About from "./pages/About";
 import Contact from "./pages/Contact";
+import Dashboard from "./pages/Dashboard";
 import NotFound from "./pages/NotFound";
 import "./global.css";
 
@@ -36,6 +37,7 @@ function App() {
           path="/capabilities"
           element={<PlaceholderPage title="Our Capabilities" />}
         />
+        <Route path="/dashboard" element={<Dashboard />} />
         <Route path="/contact" element={<Contact />} />
         <Route path="*" element={<NotFound />} />
       </Routes>
