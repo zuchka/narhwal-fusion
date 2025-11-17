@@ -334,7 +334,7 @@ export default function Dashboard() {
         </header>
 
         {/* Content */}
-        <div className="p-6 space-y-6">
+        <div className="p-6 space-y-6 bg-gradient-to-b from-transparent via-transparent to-dark/5">
           {/* Top Section - View in Shadcn Link */}
           <div className="flex items-center justify-between">
             <div className="flex-1" />
