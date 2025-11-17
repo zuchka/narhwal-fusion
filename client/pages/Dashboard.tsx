@@ -173,41 +173,6 @@ export default function Dashboard() {
 
         {/* Charts Section */}
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 mb-8">
-          {/* Album Popularity Chart */}
-          <Card className="bg-cream border-2 border-dark">
-            <CardHeader>
-              <CardTitle className="font-title text-dark">
-                Top Artists Ranking
-              </CardTitle>
-              <CardDescription className="font-copy text-dark/60">
-                Based on chart position
-              </CardDescription>
-            </CardHeader>
-            <CardContent>
-              {loading ? (
-                <Skeleton className="h-[300px] w-full" />
-              ) : (
-                <ChartContainer config={chartConfig} className="h-[300px]">
-                  <BarChart data={albumPopularityData}>
-                    <CartesianGrid strokeDasharray="3 3" />
-                    <XAxis
-                      dataKey="name"
-                      angle={-45}
-                      textAnchor="end"
-                      height={100}
-                    />
-                    <YAxis />
-                    <ChartTooltip content={<ChartTooltipContent />} />
-                    <Bar
-                      dataKey="position"
-                      fill="#d93535"
-                      radius={[8, 8, 0, 0]}
-                    />
-                  </BarChart>
-                </ChartContainer>
-              )}
-            </CardContent>
-          </Card>
 
           {/* Track Duration Chart */}
           <Card className="bg-cream border-2 border-dark">
