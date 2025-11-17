@@ -260,7 +260,7 @@ export default function Dashboard() {
                   href="#"
                   className="flex items-center gap-3 px-3 py-2 text-sm rounded-md hover:bg-accent transition-colors"
                 >
-                  <FileWord className="w-4 h-4" />
+                  <FileText className="w-4 h-4" />
                   Word Assistant
                 </a>
                 <a
