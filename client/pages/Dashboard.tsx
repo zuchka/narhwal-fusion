@@ -175,7 +175,7 @@ export default function Dashboard() {
       {/* Sidebar */}
       <aside
         className={`${
-          sidebarOpen ? "w-64" : "w-0"
+          sidebarOpen ? "w-48" : "w-0"
         } border-r-2 border-dark bg-cream transition-all duration-300 overflow-hidden flex-shrink-0`}
       >
         <div className="flex flex-col h-full">
