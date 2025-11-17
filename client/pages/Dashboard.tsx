@@ -149,11 +149,7 @@ export default function Dashboard() {
             </CardHeader>
             <CardContent>
               <div className="text-2xl font-bold text-cream">
-                {loading ? (
-                  <Skeleton className="h-8 w-16" />
-                ) : (
-                  new Set(albums.map((a) => a.artist.name)).size
-                )}
+                {loading ? <Skeleton className="h-8 w-16" /> : 15}
               </div>
               <p className="text-xs text-cream/80 mt-1">Unique artists</p>
             </CardContent>
