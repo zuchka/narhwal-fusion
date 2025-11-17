@@ -602,7 +602,7 @@ export default function Dashboard() {
 
               <div className="flex items-center gap-2">
                 <Button variant="outline" size="sm" className="h-8 gap-1.5">
-                  <LayoutColumns className="w-4 h-4" />
+                  <Columns className="w-4 h-4" />
                   Customize Columns
                   <ChevronDown className="w-4 h-4" />
                 </Button>
