@@ -459,6 +459,19 @@ export default function Dashboard() {
               {/* Chart visualization */}
               <div className="h-[250px] w-full">
                 <svg className="w-full h-full" viewBox="0 0 1000 210">
+                  <defs>
+                    {/* Gradient for red line fill */}
+                    <linearGradient id="redGradient" x1="0" y1="0" x2="0" y2="1">
+                      <stop offset="0%" stopColor="#d93535" stopOpacity="0.3" />
+                      <stop offset="100%" stopColor="#d93535" stopOpacity="0.05" />
+                    </linearGradient>
+                    {/* Gradient for dark line fill */}
+                    <linearGradient id="darkGradient" x1="0" y1="0" x2="0" y2="1">
+                      <stop offset="0%" stopColor="#282d35" stopOpacity="0.2" />
+                      <stop offset="100%" stopColor="#282d35" stopOpacity="0.02" />
+                    </linearGradient>
+                  </defs>
+
                   {/* Grid lines */}
                   <line
                     x1="0"
@@ -506,19 +519,32 @@ export default function Dashboard() {
                     opacity="0.1"
                   />
 
-                  {/* Chart lines using brand colors */}
+                  {/* Red line - filled area */}
                   <path
-                    d="M 0,110 L 71,135 L 143,80 L 214,90 L 286,45 L 357,55 L 429,25 L 500,35 L 571,10 L 643,20 L 714,5 L 786,15 L 857,0 L 929,10"
+                    d="M 0,110 C 36,123 107,147 143,80 C 179,13 214,90 286,45 C 322,23 357,55 429,25 C 465,10 500,35 571,10 C 607,-2 643,20 714,5 C 750,-3 786,15 857,0 C 893,-8 929,10 1000,15 L 1000,210 L 0,210 Z"
+                    fill="url(#redGradient)"
+                  />
+                  {/* Red line - stroke */}
+                  <path
+                    d="M 0,110 C 36,123 107,147 143,80 C 179,13 214,90 286,45 C 322,23 357,55 429,25 C 465,10 500,35 571,10 C 607,-2 643,20 714,5 C 750,-3 786,15 857,0 C 893,-8 929,10 1000,15"
                     fill="none"
                     stroke="#d93535"
                     strokeWidth="2.5"
-                    opacity="0.8"
+                    strokeLinecap="round"
                   />
+
+                  {/* Dark line - filled area */}
                   <path
-                    d="M 0,120 L 71,145 L 143,90 L 214,100 L 286,55 L 357,65 L 429,35 L 500,45 L 571,20 L 643,30 L 714,15 L 786,25 L 857,10 L 929,20"
+                    d="M 0,120 C 36,133 107,157 143,90 C 179,23 214,100 286,55 C 322,33 357,65 429,35 C 465,20 500,45 571,20 C 607,8 643,30 714,15 C 750,7 786,25 857,10 C 893,2 929,20 1000,25 L 1000,210 L 0,210 Z"
+                    fill="url(#darkGradient)"
+                  />
+                  {/* Dark line - stroke */}
+                  <path
+                    d="M 0,120 C 36,133 107,157 143,90 C 179,23 214,100 286,55 C 322,33 357,65 429,35 C 465,20 500,45 571,20 C 607,8 643,30 714,15 C 750,7 786,25 857,10 C 893,2 929,20 1000,25"
                     fill="none"
                     stroke="#282d35"
                     strokeWidth="2.5"
+                    strokeLinecap="round"
                   />
                 </svg>
               </div>
