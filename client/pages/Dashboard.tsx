@@ -619,71 +619,74 @@ export default function Dashboard() {
             </div>
 
             {/* Data Table */}
-            <Card className="border-2 border-dark shadow-lg">
+            <Card className="border-2 border-dark shadow-lg bg-cream overflow-hidden">
               <Table>
                 <TableHeader>
-                  <TableRow className="bg-muted/50">
-                    <TableHead className="w-12"></TableHead>
-                    <TableHead className="w-12">
-                      <Checkbox />
+                  <TableRow className="bg-dark hover:bg-dark border-b-2 border-dark">
+                    <TableHead className="w-12 text-cream"></TableHead>
+                    <TableHead className="w-12 text-cream">
+                      <Checkbox className="border-cream data-[state=checked]:bg-red data-[state=checked]:border-red" />
                     </TableHead>
-                    <TableHead className="font-medium">Header</TableHead>
-                    <TableHead className="font-medium">Section Type</TableHead>
-                    <TableHead className="font-medium">Status</TableHead>
-                    <TableHead className="font-medium">Target</TableHead>
-                    <TableHead className="font-medium">Limit</TableHead>
-                    <TableHead className="font-medium">Reviewer</TableHead>
-                    <TableHead className="w-12"></TableHead>
+                    <TableHead className="font-semibold text-cream">Header</TableHead>
+                    <TableHead className="font-semibold text-cream">Section Type</TableHead>
+                    <TableHead className="font-semibold text-cream">Status</TableHead>
+                    <TableHead className="font-semibold text-cream">Target</TableHead>
+                    <TableHead className="font-semibold text-cream">Limit</TableHead>
+                    <TableHead className="font-semibold text-cream">Reviewer</TableHead>
+                    <TableHead className="w-12 text-cream"></TableHead>
                   </TableRow>
                 </TableHeader>
-                <TableBody>
-                  {documents.map((doc) => (
-                    <TableRow key={doc.id}>
+                <TableBody className="bg-cream">
+                  {documents.map((doc, index) => (
+                    <TableRow
+                      key={doc.id}
+                      className="border-b border-dark/20 hover:bg-dark/5 transition-colors"
+                    >
                       <TableCell>
-                        <GripVertical className="w-3 h-3 text-muted-foreground" />
+                        <GripVertical className="w-3 h-3 text-dark/40" />
                       </TableCell>
                       <TableCell>
-                        <Checkbox />
+                        <Checkbox className="border-dark/40 data-[state=checked]:bg-red data-[state=checked]:border-red" />
                       </TableCell>
-                      <TableCell className="font-medium">
+                      <TableCell className="font-semibold text-dark">
                         {doc.header}
                       </TableCell>
                       <TableCell>
                         <Badge
                           variant="outline"
-                          className="font-medium text-muted-foreground"
+                          className="font-medium text-dark/70 border-dark/30 bg-cream/50"
                         >
                           {doc.sectionType}
                         </Badge>
                       </TableCell>
                       <TableCell>
                         {doc.status === "done" ? (
-                          <Badge variant="outline" className="gap-1">
-                            <CheckCircle2 className="w-3 h-3 fill-green-500 stroke-green-500" />
-                            <span className="text-muted-foreground">Done</span>
+                          <Badge variant="outline" className="gap-1 border-green-600/40 bg-green-50">
+                            <CheckCircle2 className="w-3 h-3 fill-green-600 stroke-green-600" />
+                            <span className="text-green-700 font-medium">Done</span>
                           </Badge>
                         ) : (
-                          <Badge variant="outline" className="gap-1">
-                            <Loader2 className="w-3 h-3 text-muted-foreground" />
-                            <span className="text-muted-foreground">
+                          <Badge variant="outline" className="gap-1 border-red/40 bg-red/5">
+                            <Loader2 className="w-3 h-3 text-red" />
+                            <span className="text-dark/70 font-medium">
                               In Process
                             </span>
                           </Badge>
                         )}
                       </TableCell>
-                      <TableCell>{doc.target}</TableCell>
-                      <TableCell>{doc.limit}</TableCell>
+                      <TableCell className="text-dark font-medium">{doc.target}</TableCell>
+                      <TableCell className="text-dark font-medium">{doc.limit}</TableCell>
                       <TableCell>
                         {doc.reviewer ? (
-                          doc.reviewer
+                          <span className="text-dark font-medium">{doc.reviewer}</span>
                         ) : (
                           <Select>
-                            <SelectTrigger className="h-9 w-[146px]">
+                            <SelectTrigger className="h-9 w-[146px] border-dark/30 bg-cream hover:bg-dark/5 text-dark">
                               <SelectValue placeholder="Assign reviewer" />
                             </SelectTrigger>
-                            <SelectContent>
-                              <SelectItem value="eddie">Eddie Lake</SelectItem>
-                              <SelectItem value="jamik">
+                            <SelectContent className="bg-cream border-2 border-dark">
+                              <SelectItem value="eddie" className="text-dark hover:bg-dark/10">Eddie Lake</SelectItem>
+                              <SelectItem value="jamik" className="text-dark hover:bg-dark/10">
                                 Jamik Tashpulatov
                               </SelectItem>
                             </SelectContent>
@@ -691,7 +694,7 @@ export default function Dashboard() {
                         )}
                       </TableCell>
                       <TableCell>
-                        <Button variant="ghost" size="icon" className="h-8 w-8">
+                        <Button variant="ghost" size="icon" className="h-8 w-8 hover:bg-dark/10 text-dark/70 hover:text-dark">
                           <MoreHorizontal className="w-4 h-4" />
                         </Button>
                       </TableCell>
@@ -701,30 +704,30 @@ export default function Dashboard() {
               </Table>
 
               {/* Table Footer */}
-              <div className="flex items-center justify-between px-4 py-3 border-t">
-                <p className="text-sm text-muted-foreground">
+              <div className="flex items-center justify-between px-4 py-3 border-t-2 border-dark bg-cream">
+                <p className="text-sm text-dark/70 font-medium">
                   0 of 68 row(s) selected.
                 </p>
                 <div className="flex items-center gap-8">
                   <div className="flex items-center gap-2">
-                    <span className="text-sm font-medium">Rows per page</span>
+                    <span className="text-sm font-semibold text-dark">Rows per page</span>
                     <Select defaultValue="10">
-                      <SelectTrigger className="h-9 w-20">
+                      <SelectTrigger className="h-9 w-20 border-dark/30 bg-cream hover:bg-dark/5 text-dark font-medium">
                         <SelectValue />
                       </SelectTrigger>
-                      <SelectContent>
-                        <SelectItem value="10">10</SelectItem>
-                        <SelectItem value="20">20</SelectItem>
-                        <SelectItem value="50">50</SelectItem>
+                      <SelectContent className="bg-cream border-2 border-dark">
+                        <SelectItem value="10" className="text-dark hover:bg-dark/10">10</SelectItem>
+                        <SelectItem value="20" className="text-dark hover:bg-dark/10">20</SelectItem>
+                        <SelectItem value="50" className="text-dark hover:bg-dark/10">50</SelectItem>
                       </SelectContent>
                     </Select>
                   </div>
-                  <span className="text-sm font-medium">Page 1 of 7</span>
+                  <span className="text-sm font-semibold text-dark">Page 1 of 7</span>
                   <div className="flex items-center gap-2">
                     <Button
                       variant="outline"
                       size="icon"
-                      className="h-8 w-8"
+                      className="h-8 w-8 border-dark/30 bg-cream hover:bg-dark/5 text-dark/40"
                       disabled
                     >
                       <ChevronLeft className="w-4 h-4" />
@@ -732,15 +735,23 @@ export default function Dashboard() {
                     <Button
                       variant="outline"
                       size="icon"
-                      className="h-8 w-8"
+                      className="h-8 w-8 border-dark/30 bg-cream hover:bg-dark/5 text-dark/40"
                       disabled
                     >
                       <ChevronsLeft className="w-4 h-4" />
                     </Button>
-                    <Button variant="outline" size="icon" className="h-8 w-8">
+                    <Button
+                      variant="outline"
+                      size="icon"
+                      className="h-8 w-8 border-dark/30 bg-cream hover:bg-dark hover:text-cream text-dark transition-colors"
+                    >
                       <ChevronRight className="w-4 h-4" />
                     </Button>
-                    <Button variant="outline" size="icon" className="h-8 w-8">
+                    <Button
+                      variant="outline"
+                      size="icon"
+                      className="h-8 w-8 border-dark/30 bg-cream hover:bg-dark hover:text-cream text-dark transition-colors"
+                    >
                       <ChevronsRight className="w-4 h-4" />
                     </Button>
                   </div>
