@@ -532,6 +532,10 @@ export default function Dashboard() {
                   <path
                     d="M 0,110 C 36,123 107,147 143,80 C 179,13 214,90 286,45 C 322,23 357,55 429,25 C 465,10 500,35 571,10 C 607,-2 643,20 714,5 C 750,-3 786,15 857,0 C 893,-8 929,10 1000,15 L 1000,210 L 0,210 Z"
                     fill="url(#redGradient)"
+                    style={{
+                      opacity: chartAnimated ? 1 : 0,
+                      transition: 'opacity 0.8s ease-in-out 0.2s'
+                    }}
                   />
                   {/* Red line - stroke */}
                   <path
@@ -540,12 +544,21 @@ export default function Dashboard() {
                     stroke="#d93535"
                     strokeWidth="2.5"
                     strokeLinecap="round"
+                    strokeDasharray="2000"
+                    strokeDashoffset={chartAnimated ? 0 : 2000}
+                    style={{
+                      transition: 'stroke-dashoffset 1.5s ease-in-out'
+                    }}
                   />
 
                   {/* Dark line - filled area */}
                   <path
                     d="M 0,120 C 36,133 107,157 143,90 C 179,23 214,100 286,55 C 322,33 357,65 429,35 C 465,20 500,45 571,20 C 607,8 643,30 714,15 C 750,7 786,25 857,10 C 893,2 929,20 1000,25 L 1000,210 L 0,210 Z"
                     fill="url(#darkGradient)"
+                    style={{
+                      opacity: chartAnimated ? 1 : 0,
+                      transition: 'opacity 0.8s ease-in-out 0.4s'
+                    }}
                   />
                   {/* Dark line - stroke */}
                   <path
@@ -554,6 +567,11 @@ export default function Dashboard() {
                     stroke="#282d35"
                     strokeWidth="2.5"
                     strokeLinecap="round"
+                    strokeDasharray="2000"
+                    strokeDashoffset={chartAnimated ? 0 : 2000}
+                    style={{
+                      transition: 'stroke-dashoffset 1.5s ease-in-out 0.2s'
+                    }}
                   />
                 </svg>
               </div>
