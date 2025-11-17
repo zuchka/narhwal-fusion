@@ -52,15 +52,10 @@ export default function Dashboard() {
   useEffect(() => {
     async function fetchMusicData() {
       try {
-        // Fetch top albums chart via our backend proxy
-        const albumsResponse = await fetch("/api/music/albums");
-        const albumsData = await albumsResponse.json();
-
         // Fetch top tracks via our backend proxy
         const tracksResponse = await fetch("/api/music/tracks");
         const tracksData = await tracksResponse.json();
 
-        setAlbums(albumsData.data.slice(0, 20));
         setTracks(tracksData.data.slice(0, 10));
 
         // Generate genre distribution data
