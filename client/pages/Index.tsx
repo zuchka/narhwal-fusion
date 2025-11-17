@@ -125,7 +125,7 @@ export default function Index() {
       {/* Hero Section */}
       <section
         id="hero"
-        className="relative min-h-screen flex items-center justify-center overflow-hidden pt-[60px]"
+        className="relative min-h-[481px] flex items-center justify-center overflow-hidden pt-[60px]"
       >
         {/* Background overlay */}
         <div className="absolute inset-0 bg-cream mix-difference z-10 pointer-events-none" />
@@ -135,17 +135,11 @@ export default function Index() {
           <div className="max-w-[90vw] mx-auto">
             <h1 className="font-title leading-none">
               <span className="block text-f-60 md:text-f-80 text-dark/80 mb-2 animate-fadeIn">
-                We make
+                make waves
               </span>
               <span className="block text-f-120 md:text-f-180 text-red font-bold animate-fadeIn animation-delay-200 relative">
-                Waves
+                NARwhal
                 <span className="absolute -inset-2 bg-red/10 blur-2xl -z-10"></span>
-              </span>
-              <span className="block text-f-60 md:text-f-80 text-dark/80 mt-2 animate-fadeIn animation-delay-400">
-                That break
-              </span>
-              <span className="block text-f-60 md:text-f-80 text-dark mb-8 animate-fadeIn animation-delay-600">
-                The norm
               </span>
             </h1>
 
