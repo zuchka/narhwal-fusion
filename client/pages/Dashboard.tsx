@@ -180,16 +180,6 @@ export default function Dashboard() {
         } border-r-2 border-dark bg-cream transition-all duration-300 overflow-hidden flex-shrink-0`}
       >
         <div className="flex flex-col h-full">
-          {/* Header */}
-          <div className="p-4 border-b-2 border-dark bg-dark">
-            <div className="flex items-center gap-3">
-              <div className="w-8 h-8 rounded-lg bg-red flex items-center justify-center">
-                <div className="w-5 h-5 border-2 border-cream rounded-full" />
-              </div>
-              <h2 className="font-semibold text-base text-cream">Acme Inc</h2>
-            </div>
-          </div>
-
           {/* Navigation */}
           <div className="flex-1 overflow-y-auto">
             {/* Platform Section */}
@@ -322,17 +312,6 @@ export default function Dashboard() {
 
       {/* Main Content */}
       <main className="flex-1 overflow-auto bg-gradient-to-b from-transparent to-cream/50">
-        {/* Header */}
-        <header className="border-b-2 border-dark bg-gradient-to-r from-dark to-dark/95 sticky top-0 z-10 shadow-lg">
-          <div className="flex items-center justify-between px-6 h-[49px]">
-            <h1 className="text-base font-semibold text-cream">Documents</h1>
-            <Button className="h-8 gap-1.5 bg-red text-cream hover:bg-red/90 border-2 border-cream/20">
-              <CirclePlus className="w-4 h-4" />
-              Quick Create
-            </Button>
-          </div>
-        </header>
-
         {/* Content */}
         <div className="p-6 space-y-6 bg-gradient-to-b from-transparent via-transparent to-dark/5">
           {/* Top Section - View in Shadcn Link */}
