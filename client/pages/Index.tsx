@@ -146,7 +146,6 @@ export default function Index() {
             {/* Decorative elements */}
             <div className="absolute right-[5vw] top-1/2 -translate-y-1/2 w-[20vw] h-[20vw] bg-red rounded-full opacity-15 blur-3xl animate-pulse" />
             <div className="absolute left-[5vw] top-1/3 w-[15vw] h-[15vw] bg-dark rounded-full opacity-5 blur-3xl" />
-
           </div>
         </div>
 
