@@ -171,7 +171,7 @@ export default function Dashboard() {
   const [selectedTimeRange, setSelectedTimeRange] = useState("3months");
 
   return (
-    <div className="flex min-h-screen bg-gradient-to-br from-cream via-cream to-red/10 font-montreal">
+    <div className="flex min-h-screen bg-gradient-to-br from-cream via-cream to-red/10 font-montreal pt-[calc(60px+1.4vw)]">
       {/* Sidebar */}
       <aside
         className={`${
