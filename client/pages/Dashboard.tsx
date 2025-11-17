@@ -619,7 +619,7 @@ export default function Dashboard() {
             </div>
 
             {/* Data Table */}
-            <Card className="border border-border">
+            <Card className="border-2 border-dark shadow-lg">
               <Table>
                 <TableHeader>
                   <TableRow className="bg-muted/50">
