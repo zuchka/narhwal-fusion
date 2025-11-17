@@ -7,7 +7,6 @@ import {
   Users,
   Database,
   FileText,
-  FileWord,
   MoreHorizontal,
   Settings,
   HelpCircle,
