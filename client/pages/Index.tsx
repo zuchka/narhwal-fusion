@@ -145,8 +145,14 @@ export default function Index() {
 
             {/* Decorative elements */}
             <div className="absolute right-[10%] top-1/2 -translate-y-1/2 w-[45vw] h-[45vw] bg-red rounded-full opacity-25 blur-3xl animate-pulse" />
-            <div className="absolute left-[10%] top-1/3 w-[40vw] h-[40vw] bg-red rounded-full opacity-20 blur-3xl animate-pulse" style={{ animationDelay: '1s' }} />
-            <div className="absolute top-[20%] left-1/2 -translate-x-1/2 w-[35vw] h-[35vw] bg-red rounded-full opacity-15 blur-3xl animate-pulse" style={{ animationDelay: '0.5s' }} />
+            <div
+              className="absolute left-[10%] top-1/3 w-[40vw] h-[40vw] bg-red rounded-full opacity-20 blur-3xl animate-pulse"
+              style={{ animationDelay: "1s" }}
+            />
+            <div
+              className="absolute top-[20%] left-1/2 -translate-x-1/2 w-[35vw] h-[35vw] bg-red rounded-full opacity-15 blur-3xl animate-pulse"
+              style={{ animationDelay: "0.5s" }}
+            />
           </div>
         </div>
 
@@ -400,7 +406,6 @@ export default function Index() {
           </div>
         </div>
       </section>
-
 
       {/* Footer */}
       <footer className="py-8 bg-dark">
