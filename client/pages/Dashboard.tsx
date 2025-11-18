@@ -52,6 +52,7 @@ import {
 } from "@/components/ui/select";
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 import { Separator } from "@/components/ui/separator";
+import { MetricCard } from "@/components/MetricCard";
 
 // Mock data for the chart - realistic visitor trends
 const chartData = [
