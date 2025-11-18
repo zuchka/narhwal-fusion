@@ -322,6 +322,42 @@ export default function Dashboard() {
       <main className="flex-1 overflow-auto bg-gradient-to-b from-transparent to-cream/50">
         {/* Content */}
         <div className="p-6 space-y-6 bg-gradient-to-b from-transparent via-transparent to-dark/5">
+          {/* Metric Cards Grid */}
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+            <MetricCard
+              title="Total Revenue"
+              value="$1,250.00"
+              change="+12.5%"
+              isPositive={true}
+              statusText="Trending up this month"
+              description="Visitors for the last 6 months"
+            />
+            <MetricCard
+              title="New Customers"
+              value="1,234"
+              change="-20%"
+              isPositive={false}
+              statusText="Down 20% this period"
+              description="Acquisition needs attention"
+            />
+            <MetricCard
+              title="Active Accounts"
+              value="45,678"
+              change="+12.5%"
+              isPositive={true}
+              statusText="Strong user retention"
+              description="Engagement exceed targets"
+            />
+            <MetricCard
+              title="Growth Rate"
+              value="4.5%"
+              change="+4.5%"
+              isPositive={true}
+              statusText="Steady performance increase"
+              description="Meets growth projections"
+            />
+          </div>
+
           {/* Chart Card */}
           <Card className="border-2 border-dark shadow-lg bg-cream mt-6">
             <CardHeader className="pb-6">
