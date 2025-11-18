@@ -629,12 +629,12 @@ export default function Dashboard() {
               </Tabs>
 
               <div className="flex items-center gap-2">
-                <Button variant="outline" size="sm" className="h-8 gap-1.5">
+                <Button variant="outline" size="sm" className="h-8 gap-1.5 border-dark/30 bg-cream hover:bg-dark/5 text-dark">
                   <Columns className="w-4 h-4" />
                   Customize Columns
                   <ChevronDown className="w-4 h-4" />
                 </Button>
-                <Button variant="outline" size="sm" className="h-8 gap-1.5">
+                <Button variant="outline" size="sm" className="h-8 gap-1.5 border-dark/30 bg-cream hover:bg-dark/5 text-dark">
                   <Plus className="w-4 h-4" />
                   Add columns
                 </Button>
