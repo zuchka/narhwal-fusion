@@ -603,26 +603,26 @@ export default function Dashboard() {
           <div className="space-y-6">
             <div className="flex items-center justify-between">
               <Tabs defaultValue="outline" className="w-auto">
-                <TabsList className="h-[34px] bg-muted p-0.5">
+                <TabsList className="h-[34px] bg-dark/10 p-0.5 border border-dark/20">
                   <TabsTrigger
                     value="outline"
-                    className="h-7 px-2 data-[state=active]:bg-background data-[state=active]:shadow-sm"
+                    className="h-7 px-2 data-[state=active]:bg-cream data-[state=active]:shadow-sm data-[state=active]:border data-[state=active]:border-dark/20 text-dark"
                   >
                     Outline
                   </TabsTrigger>
-                  <TabsTrigger value="past" className="h-7 px-2 gap-1.5">
+                  <TabsTrigger value="past" className="h-7 px-2 gap-1.5 text-dark">
                     Past Performance
-                    <span className="flex items-center justify-center w-5 h-5 rounded-full bg-muted text-xs">
+                    <span className="flex items-center justify-center w-5 h-5 rounded-full bg-dark/10 text-xs text-dark">
                       3
                     </span>
                   </TabsTrigger>
-                  <TabsTrigger value="personnel" className="h-7 px-2 gap-1.5">
+                  <TabsTrigger value="personnel" className="h-7 px-2 gap-1.5 text-dark">
                     Key Personnel
-                    <span className="flex items-center justify-center w-5 h-5 rounded-full bg-muted text-xs">
+                    <span className="flex items-center justify-center w-5 h-5 rounded-full bg-dark/10 text-xs text-dark">
                       2
                     </span>
                   </TabsTrigger>
-                  <TabsTrigger value="focus" className="h-7 px-2">
+                  <TabsTrigger value="focus" className="h-7 px-2 text-dark">
                     Focus Documents
                   </TabsTrigger>
                 </TabsList>
