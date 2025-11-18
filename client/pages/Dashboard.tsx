@@ -528,20 +528,20 @@ export default function Dashboard() {
                     opacity="0.1"
                   />
 
-                  {/* Red line - filled area */}
+                  {/* Light grey line - filled area */}
                   <path
                     d="M 0,145 C 25,170 55,135 71,165 C 92,180 118,95 143,125 C 168,148 198,82 214,45 C 235,18 268,110 286,88 C 305,70 332,125 357,75 C 378,35 412,95 429,55 C 448,22 475,118 500,48 C 518,8 548,85 571,35 C 590,0 625,78 643,25 C 665,-15 698,92 714,52 C 732,25 768,65 786,38 C 808,5 835,88 857,42 C 875,12 908,75 929,28 C 948,-8 978,55 1000,18 L 1000,210 L 0,210 Z"
-                    fill="url(#redGradient)"
+                    fill="url(#lightGreyGradient)"
                     style={{
                       opacity: chartAnimated ? 1 : 0,
                       transition: 'opacity 0.8s ease-in-out 0.2s'
                     }}
                   />
-                  {/* Red line - stroke */}
+                  {/* Light grey line - stroke */}
                   <path
                     d="M 0,145 C 25,170 55,135 71,165 C 92,180 118,95 143,125 C 168,148 198,82 214,45 C 235,18 268,110 286,88 C 305,70 332,125 357,75 C 378,35 412,95 429,55 C 448,22 475,118 500,48 C 518,8 548,85 571,35 C 590,0 625,78 643,25 C 665,-15 698,92 714,52 C 732,25 768,65 786,38 C 808,5 835,88 857,42 C 875,12 908,75 929,28 C 948,-8 978,55 1000,18"
                     fill="none"
-                    stroke="#d93535"
+                    stroke="#9ca3af"
                     strokeWidth="2.5"
                     strokeLinecap="round"
                     strokeDasharray="2000"
