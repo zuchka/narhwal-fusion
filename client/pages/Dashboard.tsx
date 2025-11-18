@@ -469,10 +469,10 @@ export default function Dashboard() {
               <div className="h-[250px] w-full">
                 <svg className="w-full h-full" viewBox="0 0 1000 210">
                   <defs>
-                    {/* Gradient for red line fill */}
-                    <linearGradient id="redGradient" x1="0" y1="0" x2="0" y2="1">
-                      <stop offset="0%" stopColor="#d93535" stopOpacity="0.3" />
-                      <stop offset="100%" stopColor="#d93535" stopOpacity="0.05" />
+                    {/* Gradient for light grey line fill */}
+                    <linearGradient id="lightGreyGradient" x1="0" y1="0" x2="0" y2="1">
+                      <stop offset="0%" stopColor="#9ca3af" stopOpacity="0.3" />
+                      <stop offset="100%" stopColor="#9ca3af" stopOpacity="0.05" />
                     </linearGradient>
                     {/* Gradient for dark line fill */}
                     <linearGradient id="darkGradient" x1="0" y1="0" x2="0" y2="1">
