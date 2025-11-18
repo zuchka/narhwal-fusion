@@ -394,14 +394,34 @@ export default function Dashboard() {
                 <svg className="w-full h-full" viewBox="0 0 1000 210">
                   <defs>
                     {/* Gradient for light grey line fill */}
-                    <linearGradient id="lightGreyGradient" x1="0" y1="0" x2="0" y2="1">
+                    <linearGradient
+                      id="lightGreyGradient"
+                      x1="0"
+                      y1="0"
+                      x2="0"
+                      y2="1"
+                    >
                       <stop offset="0%" stopColor="#9ca3af" stopOpacity="0.3" />
-                      <stop offset="100%" stopColor="#9ca3af" stopOpacity="0.05" />
+                      <stop
+                        offset="100%"
+                        stopColor="#9ca3af"
+                        stopOpacity="0.05"
+                      />
                     </linearGradient>
                     {/* Gradient for dark line fill */}
-                    <linearGradient id="darkGradient" x1="0" y1="0" x2="0" y2="1">
+                    <linearGradient
+                      id="darkGradient"
+                      x1="0"
+                      y1="0"
+                      x2="0"
+                      y2="1"
+                    >
                       <stop offset="0%" stopColor="#282d35" stopOpacity="0.2" />
-                      <stop offset="100%" stopColor="#282d35" stopOpacity="0.02" />
+                      <stop
+                        offset="100%"
+                        stopColor="#282d35"
+                        stopOpacity="0.02"
+                      />
                     </linearGradient>
                   </defs>
 
@@ -458,7 +478,7 @@ export default function Dashboard() {
                     fill="url(#lightGreyGradient)"
                     style={{
                       opacity: chartAnimated ? 1 : 0,
-                      transition: 'opacity 0.8s ease-in-out 0.2s'
+                      transition: "opacity 0.8s ease-in-out 0.2s",
                     }}
                   />
                   {/* Light grey line - stroke */}
@@ -471,7 +491,7 @@ export default function Dashboard() {
                     strokeDasharray="2000"
                     strokeDashoffset={chartAnimated ? 0 : 2000}
                     style={{
-                      transition: 'stroke-dashoffset 1.5s ease-in-out'
+                      transition: "stroke-dashoffset 1.5s ease-in-out",
                     }}
                   />
 
@@ -481,7 +501,7 @@ export default function Dashboard() {
                     fill="url(#darkGradient)"
                     style={{
                       opacity: chartAnimated ? 1 : 0,
-                      transition: 'opacity 0.8s ease-in-out 0.4s'
+                      transition: "opacity 0.8s ease-in-out 0.4s",
                     }}
                   />
                   {/* Dark line - stroke */}
@@ -494,7 +514,7 @@ export default function Dashboard() {
                     strokeDasharray="2000"
                     strokeDashoffset={chartAnimated ? 0 : 2000}
                     style={{
-                      transition: 'stroke-dashoffset 1.5s ease-in-out 0.2s'
+                      transition: "stroke-dashoffset 1.5s ease-in-out 0.2s",
                     }}
                   />
                 </svg>
@@ -534,13 +554,19 @@ export default function Dashboard() {
                   >
                     Outline
                   </TabsTrigger>
-                  <TabsTrigger value="past" className="h-7 px-2 gap-1.5 text-dark">
+                  <TabsTrigger
+                    value="past"
+                    className="h-7 px-2 gap-1.5 text-dark"
+                  >
                     Past Performance
                     <span className="flex items-center justify-center w-5 h-5 rounded-full bg-dark/10 text-xs text-dark">
                       3
                     </span>
                   </TabsTrigger>
-                  <TabsTrigger value="personnel" className="h-7 px-2 gap-1.5 text-dark">
+                  <TabsTrigger
+                    value="personnel"
+                    className="h-7 px-2 gap-1.5 text-dark"
+                  >
                     Key Personnel
                     <span className="flex items-center justify-center w-5 h-5 rounded-full bg-dark/10 text-xs text-dark">
                       2
@@ -553,12 +579,20 @@ export default function Dashboard() {
               </Tabs>
 
               <div className="flex items-center gap-2">
-                <Button variant="outline" size="sm" className="h-8 gap-1.5 border-dark/30 bg-cream hover:bg-dark/5 text-dark">
+                <Button
+                  variant="outline"
+                  size="sm"
+                  className="h-8 gap-1.5 border-dark/30 bg-cream hover:bg-dark/5 text-dark"
+                >
                   <Columns className="w-4 h-4" />
                   Customize Columns
                   <ChevronDown className="w-4 h-4" />
                 </Button>
-                <Button variant="outline" size="sm" className="h-8 gap-1.5 border-dark/30 bg-cream hover:bg-dark/5 text-dark">
+                <Button
+                  variant="outline"
+                  size="sm"
+                  className="h-8 gap-1.5 border-dark/30 bg-cream hover:bg-dark/5 text-dark"
+                >
                   <Plus className="w-4 h-4" />
                   Add columns
                 </Button>
